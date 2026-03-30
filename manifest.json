@@ -4,10 +4,23 @@
   "version": "1.0",
   "content_scripts": [
     {
-      "matches": ["https://www.sportsstation.id/*"],
-      "js": ["content.js"],
-      "run_at": "document_start",
-      "world": "MAIN"
+      "matches": [
+        "https://www.sportsstation.id/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "inject.js"
+      ],
+      "matches": [
+        "https://www.sportsstation.id/*"
+      ]
     }
   ]
 }
